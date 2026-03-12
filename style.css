@@ -1,0 +1,106 @@
+@font-face {
+	font-family: NotoSansLight;
+	src: url(./fonts/NotoSans-Light.ttf);
+}
+
+@font-face {
+	font-family: NotoSansExtraLight;
+	src: url(./fonts/NotoSans-ExtraLight.ttf);
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: NotoSansLight;
+	text-align: center;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: url("./images/bg3.webp");
+	background-size: cover;
+	backround-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+
+}
+
+h1 {
+	font-size: 30px;
+	font-family: NotoSansExtraLight;
+}
+
+h2 {
+	font-size: 16px;
+}
+
+.window-border {
+	border-image: url("./images/window-border.webp") round;
+	border-image-slice: 220 fill;
+	border-image-repeat: stretch;
+	border-image-width: 55px;
+	padding: 24px;
+}
+
+.window-border > * {
+	position: relative;
+	top: 5px;
+}
+
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: black;
+}
+
+.main-button {
+	width: 75%;
+}
+
+.button-border {
+	border-image: url("./images/button-border.webp") round;
+	border-image-slice: 12 fill;
+	border-image-repeat: stretch;
+	border-image-width: 3px;
+	padding: 6px;
+	margin: 5px;
+}
+
+.button-border:hover {
+	border-image: url("./images/button-border-hover.webp") round;
+	border-image-slice: 12 fill;
+	border-image-repeat: stretch;
+	border-image-width: 3px;
+	padding: 6px;
+	margin: 5px;
+}
+
+.column-centered {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.row-centered {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-round{
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
